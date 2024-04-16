@@ -1,0 +1,46 @@
+Numerando como interruptor 1, 2 e 3.
+Salas A, B e C.
+
+Acenderia o interruptor 1 e esperaria alguns minutos.
+Desligaria o interruptor 1.
+Acenderia o interruptor 2.
+Iria até a sala A
+    Se a sala A estiver com a lâmpada apagada e quente{
+        O interruptor 1 controla a sala A.
+        Acenda o interruptor 2 e vá a sala B {
+            Se a sala B estiver acesa, então{
+                interruptor 2 controla sala B
+                interruptor 3 controla sala C
+            }
+            Senão{
+                interruptor 3 controla sala B
+                interruptor 2 controla sala C
+            }
+        }
+    }
+    Se a sala A estiver com a lâmpada acesa {
+        O interruptor 2 controla a sala A.
+        Acenda o interruptor 1 e vá a sala B {
+            Se a sala B estiver acesa, então{
+                interruptor 1 controla sala B
+                interruptor 3 controla sala C
+            }
+            Senão{
+                interruptor 3 controla sala B
+                interruptor 1 controla sala C
+            }
+        }
+    }
+    Se a sala A estiver com a lâmpada fria {
+        O interruptor 3 controla a sala A.
+        Acenda o interruptor 1 e vá a sala B {
+            Se a sala B estiver acesa, então{
+                interruptor 1 controla sala B
+                interruptor 2 controla sala C
+            }
+            Senão{
+                interruptor 2 controla sala B
+                interruptor 1 controla sala C
+            }
+        }
+    }     
